@@ -1,11 +1,33 @@
 import React from 'react'
-import { MainContainer } from './style'
+import { RuleBtn, RuleModal, ModalTitle } from './style'
+import ruleImage from '../../static/images/image-rules.svg'
 
 const RulesButton = () => {
+  const [isShowRule, setIsShowRule] = React.useState(false)
+
+  const handleOpenModal = () => {
+    setIsShowRule((prev) => !prev);
+  }
+
   return (
-    <MainContainer>
-      Rules
-    </MainContainer>
+    <>
+      <RuleBtn onClick={handleOpenModal}>
+        Rules
+      </RuleBtn>
+      <RuleModal
+        open={isShowRule}
+        cancelButtonProps={{ style: { display: 'none' } }}
+        okButtonProps={{ style: { display: 'none' } }}
+        centered
+        width={360}
+        onCancel={handleOpenModal}
+      >
+        <>
+          <ModalTitle>Rules</ModalTitle>
+          <img src={ruleImage} alt="rules" />
+        </>
+      </RuleModal>
+    </>
   )
 }
 
