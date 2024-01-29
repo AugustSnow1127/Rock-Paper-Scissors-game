@@ -1,6 +1,6 @@
 import React from 'react'
 import ScoreBoard from '../Components/ScoreBoard/ScoreBoard.js'
-import RockPaperScissors from '../Components/RockPaperScissors/RockPaperScissors.js'
+import GameStart from '../Components/GameStart/GameStart.js'
 import RulesButton from '../Components/RulesButton/RulesButton.js'
 import {
   HomeContainer,
@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <HomeContainer>
       <ScoreBoard />
-      <RockPaperScissors />
+      <GameStart />
       <RulesButton />
     </HomeContainer>
   )
