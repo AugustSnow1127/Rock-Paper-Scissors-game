@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { Button } from "antd";
 
 export const MainContainer = styled.div`
   position: relative;
-  top: 50px;
+  top: 80px;
   width: 500px;
   height: 500px;
   display: flex;
@@ -24,7 +23,7 @@ export const UpperTriangleLayout = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 10px;
   box-sizing: border-box;
 `;
 
@@ -37,10 +36,4 @@ export const LowerTriangleLayout = styled.div`
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-`;
-
-export const GameButton = styled(Button)`
-  width: 150px !important;
-  height: 150px;
-  border-radius: 50%;
 `;

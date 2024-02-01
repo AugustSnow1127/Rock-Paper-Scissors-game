@@ -1,14 +1,11 @@
 import React from 'react'
 import triangle from '../../static/images/bg-triangle.svg'
-import rock from '../../static/images/icon-rock.svg'
-import paper from '../../static/images/icon-paper.svg'
-import scissors from '../../static/images/icon-scissors.svg'
+import GameButton from '../GameButton/GameButton'
 import {
   MainContainer,
   UpperTriangleLayout,
   LowerTriangleLayout,
   TriangleImg,
-  GameButton,
 } from './style'
 
 const GameStart = () => {
@@ -16,11 +13,11 @@ const GameStart = () => {
     <MainContainer>
       <TriangleImg src={triangle} alt="triangle" />
       <UpperTriangleLayout>
-        <GameButton icon={<img src={paper} alt="paper" />} />
-        <GameButton icon={<img src={scissors} alt="scissors" />} />
+        <GameButton type="paper" />
+        <GameButton type="scissors" />
       </UpperTriangleLayout>
       <LowerTriangleLayout>
-      <GameButton icon={<img src={rock} alt="rock" />} />
+      <GameButton type="rock" />
       </LowerTriangleLayout>
     </MainContainer>
   )
