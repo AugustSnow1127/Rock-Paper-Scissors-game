@@ -14,8 +14,8 @@ const iconMap = {
 
 const GameButton = ({ type }) => {
   return ( 
-    <GameButtonContainer ant-click-animating-without-extra-node="false" className={type}>
-      <InnerButtonWhiteCircle ant-click-animating-without-extra-node="false" icon={iconMap[type]} />
+    <GameButtonContainer className={type}>
+      <InnerButtonWhiteCircle icon={iconMap[type]} />
     </GameButtonContainer>
   )
 }
