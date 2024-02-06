@@ -26,4 +26,9 @@ GameButton.propsTypes = {
   chose: PropTypes.bool,
 }
 
+GameButton.defaultProps = {
+  handleUserChoice: () => {},
+  chose: false,
+}
+
 export default GameButton
