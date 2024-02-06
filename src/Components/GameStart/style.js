@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const MainContainer = styled.div`
   position: relative;
   top: 80px;
-  width: 500px;
-  height: 500px;
+  width: 50vw;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,13 +17,12 @@ export const TriangleImg = styled.img`
 
 export const UpperTriangleLayout = styled.div`
   height: 50%;
-  width: 100%;
+  width: 490px;
   position: relative;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
   box-sizing: border-box;
 `;
 
