@@ -51,7 +51,7 @@ const useGameResult = (userChoice, houseChoice, setResult) => {
         setScoreNum((prev) => prev + 1)
       })
     } else {
-      delay(2000).then(() => {
+      delay(500).then(() => {
         setResult('lose')
         setScoreNum((prev) => prev - 1)
       })
@@ -74,7 +74,7 @@ const GameEnd = ({
   useGameResult(userChoice, houseChoice, setResult)
 
   return (
-    <GameEndContainer style={{justifyContent: result ? "center" : "space-between"}}>
+    <GameEndContainer>
       <ChoiceContainer className="userChoice">
         <ChoiceTitle>YOU PICKED</ChoiceTitle>
         {userChoice ? <GameButton type={userChoice} chose /> : <EmptyCircle />}

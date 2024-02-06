@@ -46,11 +46,11 @@ export const EmptyCircle = styled.div`
 
 export const GameEndContainer = styled.div`
   // border: 1px solid red;
-  width: 120%;
+  width: 130%;
   height: 100%;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 `;
 
