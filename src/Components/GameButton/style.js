@@ -26,6 +26,13 @@ export const GameButtonContainer = styled(Button)`
   &:after {
     display: none;
   }
+
+  ${({ chose }) =>
+    chose &&
+    `
+      scale: 1.1;
+    `
+  }
 `;
 
 export const InnerButtonWhiteCircle = styled(Button)`

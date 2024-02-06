@@ -1,18 +1,21 @@
 import React from 'react'
 import ScoreBoard from '../Components/ScoreBoard/ScoreBoard.js'
-import GameStart from '../Components/GameStart/GameStart.js'
+import GamePanel from '../Components/GamePanel/GamePanel.js'
 import RulesButton from '../Components/RulesButton/RulesButton.js'
+import {ScoreContextProvider} from '../Store/scoreStore.js'
 import {
   HomeContainer,
 } from './style'
 
 const Home = () => {
   return (
-    <HomeContainer>
-      <ScoreBoard />
-      <GameStart />
-      <RulesButton />
-    </HomeContainer>
+    <ScoreContextProvider>
+      <HomeContainer>
+        <ScoreBoard />
+        <GamePanel />
+        <RulesButton />
+      </HomeContainer>
+    </ScoreContextProvider>
   )
 }
 

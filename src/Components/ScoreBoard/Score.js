@@ -1,4 +1,5 @@
 import React from 'react'
+import { useScoreStore } from '../../Store/scoreStore.js'
 import {
   ScoreContainer,
   ScoreTitle,
@@ -6,10 +7,12 @@ import {
 } from './style'
 
 const Score = () => {
+  const { scoreNum } = useScoreStore()
+
   return (
     <ScoreContainer>
       <ScoreTitle>Score</ScoreTitle>
-      <ScoreNum>0</ScoreNum>
+      <ScoreNum>{scoreNum}</ScoreNum>
     </ScoreContainer>
   )
 }

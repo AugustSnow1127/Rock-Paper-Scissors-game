@@ -12,6 +12,7 @@ export const RuleBtn = styled.div`
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 4px;
+  cursor: pointer;
 `;
 
 export const RuleModal = styled(Modal)`

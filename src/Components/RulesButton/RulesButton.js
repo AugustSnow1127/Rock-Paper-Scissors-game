@@ -14,6 +14,7 @@ const RulesButton = () => {
       <RuleBtn onClick={handleOpenModal}>
         Rules
       </RuleBtn>
+      
       <RuleModal
         open={isShowRule}
         cancelButtonProps={{ style: { display: 'none' } }}
@@ -21,11 +22,10 @@ const RulesButton = () => {
         centered
         width={360}
         onCancel={handleOpenModal}
+        zIndex={1000}
       >
-        <>
-          <ModalTitle>Rules</ModalTitle>
-          <img src={ruleImage} alt="rules" />
-        </>
+        <ModalTitle>Rules</ModalTitle>
+        <img src={ruleImage} alt="rules" />
       </RuleModal>
     </>
   )
