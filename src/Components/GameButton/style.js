@@ -33,6 +33,11 @@ export const GameButtonContainer = styled(Button)`
       scale: 1.1;
     `
   }
+
+  @media (min-width: 375px) and (max-width: 1366px) {
+    width: 300px !important;
+    height: 300px;
+  }
 `;
 
 export const InnerButtonWhiteCircle = styled(Button)`
@@ -45,5 +50,17 @@ export const InnerButtonWhiteCircle = styled(Button)`
   cursor: pointer;
   &:after {
     display: none;
+  }
+
+  @media (min-width: 375px) and (max-width: 1366px) {
+    width: 225px !important;
+    height: 225px;
+  }
+`;
+
+export const ButtonIcon = styled.img`
+  @media (min-width: 375px) and (max-width: 1366px) {
+    width: 100px;
+    height: 100px;
   }
 `;

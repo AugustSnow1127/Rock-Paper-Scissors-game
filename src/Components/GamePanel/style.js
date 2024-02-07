@@ -13,6 +13,10 @@ export const MainContainer = styled.div`
 
 export const TriangleImg = styled.img`
   position: absolute;
+
+  @media (min-width: 375px) and (max-width: 1366px) {
+    width: 50vw;
+  }
 `;
 
 export const UpperTriangleLayout = styled.div`
@@ -24,6 +28,10 @@ export const UpperTriangleLayout = styled.div`
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+
+  @media (min-width: 375px) and (max-width: 1366px) {
+    width: 700px;
+  }
 `;
 
 export const LowerTriangleLayout = styled.div`
@@ -35,6 +43,12 @@ export const LowerTriangleLayout = styled.div`
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+`;
+
+export const CircleContainer = styled.div`
+  height: 300px;
+  display: flex;
+  align-items: center;
 `;
 
 export const EmptyCircle = styled.div`
@@ -58,8 +72,14 @@ export const ChoiceContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 75%;
+  width: 100%;
+
+  @media (min-width: 375px) and (max-width: 1366px) {
+    height: 500px;
+    margin-bottom: 300px;
+  }
 
   &.userChoice {
     order: 1;
@@ -74,6 +94,12 @@ export const ChoiceTitle = styled.h2`
   color: #fff;
   font-size: 1.5rem;
   margin: 0;
+
+  @media (min-width: 375px) and (max-width: 1366px) {
+    order: 1;
+    font-size: 2.2rem;
+    width: 400px;
+  }
 `;
 
 export const GameResultContainer = styled.div`
@@ -85,6 +111,11 @@ export const GameResultContainer = styled.div`
   width: 100%;
 
   order: 2;
+
+  @media (min-width: 375px) and (max-width: 1366px) {
+    position: absolute;
+    bottom: 50px;
+  }
 `;
 
 export const GameResult = styled.h1`
@@ -92,6 +123,10 @@ export const GameResult = styled.h1`
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
+
+  @media (min-width: 375px) and (max-width: 1366px) {
+    font-size: 5rem;
+  }
 `;
 
 export const RestartButton = styled.button`
@@ -102,4 +137,11 @@ export const RestartButton = styled.button`
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  margin-top: 20px;
+
+  @media (min-width: 375px) and (max-width: 1366px) {
+    font-size: 1.7rem;
+    padding: 20px 40px;
+    font-weight: 700;
+  }
 `;

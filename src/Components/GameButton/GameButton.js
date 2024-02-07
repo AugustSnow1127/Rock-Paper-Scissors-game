@@ -4,12 +4,12 @@ import rock from '../../static/images/icon-rock.svg'
 import paper from '../../static/images/icon-paper.svg'
 import scissors from '../../static/images/icon-scissors.svg'
 
-import { GameButtonContainer, InnerButtonWhiteCircle } from './style'
+import { GameButtonContainer, InnerButtonWhiteCircle, ButtonIcon } from './style'
 
 const iconMap = {
-  rock: <img src={rock} alt="rock" />,
-  paper: <img src={paper} alt="paper" />,
-  scissors: <img src={scissors} alt="scissors" />,
+  rock: <ButtonIcon src={rock} alt="rock" />,
+  paper: <ButtonIcon src={paper} alt="paper" />,
+  scissors: <ButtonIcon src={scissors} alt="scissors" />,
 }
 
 const GameButton = ({ type, handleUserChoice, chose }) => {

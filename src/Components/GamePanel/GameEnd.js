@@ -10,6 +10,7 @@ import {
   GameResultContainer,
   GameResult,
   RestartButton,
+  CircleContainer,
 } from './style'
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
@@ -77,11 +78,15 @@ const GameEnd = ({
     <GameEndContainer>
       <ChoiceContainer className="userChoice">
         <ChoiceTitle>YOU PICKED</ChoiceTitle>
-        {userChoice ? <GameButton type={userChoice} chose /> : <EmptyCircle />}
+        <CircleContainer>
+          {userChoice ? <GameButton type={userChoice} chose /> : <EmptyCircle />}
+        </CircleContainer>
       </ChoiceContainer>
       <ChoiceContainer className="houseChoice">
         <ChoiceTitle>THE HOUSE PICKED</ChoiceTitle>
-        {houseChoice ? <GameButton type={houseChoice} chose /> : <EmptyCircle />}
+        <CircleContainer>
+          {houseChoice ? <GameButton type={houseChoice} chose /> : <EmptyCircle />}
+        </CircleContainer>
       </ChoiceContainer>
 
       <GameResultContainer style={{opacity: result ? 1 : 0}}>

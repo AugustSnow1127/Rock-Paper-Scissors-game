@@ -1,5 +1,5 @@
 import React from 'react'
-import { RuleBtn, RuleModal, ModalTitle } from './style'
+import { RuleBtn, RuleModal, ModalTitle, RuleImg } from './style'
 import ruleImage from '../../static/images/image-rules.svg'
 import iconClose from '../../static/images/icon-close.svg'
 
@@ -28,7 +28,7 @@ const RulesButton = () => {
           closeIcon={<img src={iconClose} alt="close" />}
         >
           <ModalTitle>Rules</ModalTitle>
-          <img src={ruleImage} alt="rules" />
+          <RuleImg src={ruleImage} alt="rules" />
         </RuleModal>
       )}
     </>
