@@ -14,7 +14,7 @@ export const RuleBtn = styled.div`
   letter-spacing: 4px;
   cursor: pointer;
 
-  @media (min-width: 375px) and (max-width: 1366px) {
+  @media (min-width: 375px) and (max-width: 768px) {
     right: auto;
     bottom: 100px;
     width: 150px;
@@ -61,7 +61,7 @@ export const RuleModal = styled(Modal)`
     cursor: pointer;
   }
 
-  @media (min-width: 375px) and (max-width: 1366px) {
+  @media (min-width: 375px) and (max-width: 768px) {
     width: 500px !important;
     height: 550px;
 
@@ -83,7 +83,7 @@ export const ModalTitle = styled.h1`
   top: 30px;
   left: 30px;
 
-  @media (min-width: 375px) and (max-width: 1366px) {
+  @media (min-width: 375px) and (max-width: 768px) {
     top: 50px;
     left: 50px;
     font-size: 50px;
@@ -94,7 +94,7 @@ export const RuleImg = styled.img`
   width: 100%;
   margin-top: 30px;
 
-  @media (min-width: 375px) and (max-width: 1366px) {
+  @media (min-width: 375px) and (max-width: 768px) {
     width: 120%;
   }
 `;
