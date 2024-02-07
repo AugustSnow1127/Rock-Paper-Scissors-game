@@ -84,12 +84,10 @@ const GameEnd = ({
         {houseChoice ? <GameButton type={houseChoice} chose /> : <EmptyCircle />}
       </ChoiceContainer>
 
-      {result && (
-        <GameResultContainer>
-          <GameResult style={{marginBottom: 10}}>{resultMap[result]}</GameResult>
-          <RestartButton onClick={() => restartGame()}>PLAY AGAIN</RestartButton>
-        </GameResultContainer>
-      )}
+      <GameResultContainer style={{opacity: result ? 1 : 0}}>
+        <GameResult style={{marginBottom: 10}}>{resultMap[result]}</GameResult>
+        <RestartButton onClick={() => restartGame()}>PLAY AGAIN</RestartButton>
+      </GameResultContainer>
     </GameEndContainer>
   )
 }
