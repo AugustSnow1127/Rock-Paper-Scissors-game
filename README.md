@@ -5,6 +5,7 @@ This project is a challenge sourced from [Frontend Mentor](https://www.frontendm
 
 ## Features
 - Play Rock, Paper, Scissors against the computer
+- Responsive web design (RWD) layout for 375px mobile devices
 
 ## Technologies Used
 - React.js
