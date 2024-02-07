@@ -14,7 +14,6 @@ export const MainContainer = styled.div`
   @media (min-width: 375px) and (max-width: 768px) {
     padding: 40px;
     top: 100px;
-    border: 2px solid red;
   }
 `;
 
