@@ -27,7 +27,7 @@ const useHouseChoice = (userChoice, setHouseChoice) => {
     const choices = ['rock', 'paper', 'scissors']
     // delay house choice to make it more interesting
     delay(2000).then(() => {
-      const randomChoice = choices[Math.floor(Math.random() * choices.length)]
+      const randomChoice = choices[Math.floor(Math.random() * 2)]
       setHouseChoice(randomChoice)
     })
 
