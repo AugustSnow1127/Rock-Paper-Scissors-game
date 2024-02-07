@@ -13,7 +13,7 @@ const Home = () => {
       <HomeContainer>
         <ScoreBoard />
         <GamePanel />
-        {/* <RulesButton /> */}
+        <RulesButton />
       </HomeContainer>
     </ScoreContextProvider>
   )

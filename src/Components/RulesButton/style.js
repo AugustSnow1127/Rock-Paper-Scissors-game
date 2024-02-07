@@ -16,12 +16,32 @@ export const RuleBtn = styled.div`
 `;
 
 export const RuleModal = styled(Modal)`
-  .ant-modal-close-icon {
+  // centered
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 5px;
+  border-radius: 50px;
+
+  .ant-modal-close {
     font-size: 20px;
     padding: 18px;
     margin-right: 10px;
-
+    position: absolute;
+    right: 8px;
+    top: 16px;
+    border-radius: 50%;
+    overflow: hidden;
     background: #ffffff;
+    border: none;
+    cursor: pointer;
   }
 `;
 
