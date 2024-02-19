@@ -14,12 +14,7 @@ export const RuleBtn = styled.div`
   letter-spacing: 4px;
   cursor: pointer;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    right: auto;
-    bottom: 100px;
-    width: 150px;
-    padding: 15px 30px;
-    font-size: 2rem;
+  @media (max-width: 768px) {
   }
 `;
 
@@ -61,16 +56,7 @@ export const RuleModal = styled(Modal)`
     cursor: pointer;
   }
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    width: 500px !important;
-    height: 550px;
-
-    .ant-modal-close {
-      scale: 1.5;
-      font-size: 30px;
-      right: 40px;
-      top: 40px;
-    }
+  @media (max-width: 768px) {
   }
 `;
 
@@ -83,10 +69,7 @@ export const ModalTitle = styled.h1`
   top: 30px;
   left: 30px;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    top: 50px;
-    left: 50px;
-    font-size: 50px;
+  @media (max-width: 768px) {
   }
 `;
 
@@ -94,7 +77,6 @@ export const RuleImg = styled.img`
   width: 100%;
   margin-top: 30px;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    width: 120%;
+  @media (max-width: 768px) {
   }
 `;

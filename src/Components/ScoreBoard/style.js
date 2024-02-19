@@ -11,9 +11,7 @@ export const MainContainer = styled.div`
   position: absolute;
   padding: 20px;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    padding: 40px;
-    top: 100px;
+  @media (max-width: 768px) {
   }
 `;
 
@@ -21,9 +19,7 @@ export const Logo = styled.img`
   width: 150px;
   height: 100px;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    width: 250px;
-    height: 150px;
+  @media (max-width: 768px) {
   }
 `;
 
@@ -36,9 +32,7 @@ export const ScoreContainer = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    width: 200px;
-    height: 150px;
+  @media (max-width: 768px) {
   }
 `;
 
@@ -47,8 +41,7 @@ export const ScoreTitle = styled.h2`
   font-size: 1.2rem;
   font-weight: 600;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    font-size: 1.7rem;
+  @media (max-width: 768px) {
   }
 `;
 
@@ -57,7 +50,6 @@ export const ScoreNum = styled.h1`
   font-size: 4rem;
   font-weight: 700;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    font-size: 6rem;
+  @media (max-width: 768px) {
   }
 `;

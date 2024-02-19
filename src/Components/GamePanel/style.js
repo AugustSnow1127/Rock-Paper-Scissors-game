@@ -14,8 +14,7 @@ export const MainContainer = styled.div`
 export const TriangleImg = styled.img`
   position: absolute;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    width: 50vw;
+  @media (max-width: 768px) {
   }
 `;
 
@@ -29,8 +28,7 @@ export const UpperTriangleLayout = styled.div`
   align-items: center;
   box-sizing: border-box;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    width: 700px;
+  @media (max-width: 768px) {
   }
 `;
 
@@ -76,9 +74,7 @@ export const ChoiceContainer = styled.div`
   height: 75%;
   width: 100%;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    height: 500px;
-    margin-bottom: 300px;
+  @media (max-width: 768px) {
   }
 
   &.userChoice {
@@ -95,10 +91,7 @@ export const ChoiceTitle = styled.h2`
   font-size: 1.5rem;
   margin: 0;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    order: 1;
-    font-size: 2.2rem;
-    width: 400px;
+  @media (max-width: 768px) {
   }
 `;
 
@@ -112,9 +105,7 @@ export const GameResultContainer = styled.div`
 
   order: 2;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    position: absolute;
-    bottom: 50px;
+  @media (max-width: 768px) {
   }
 `;
 
@@ -124,8 +115,7 @@ export const GameResult = styled.h1`
   font-weight: 700;
   margin: 0;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    font-size: 5rem;
+  @media (max-width: 768px) {
   }
 `;
 
@@ -139,9 +129,6 @@ export const RestartButton = styled.button`
   cursor: pointer;
   margin-top: 20px;
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    font-size: 1.7rem;
-    padding: 20px 40px;
-    font-weight: 700;
+  @media (max-width: 768px) {
   }
 `;
