@@ -15,6 +15,9 @@ export const RuleBtn = styled.div`
   cursor: pointer;
 
   @media (max-width: 768px) {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 70px;
   }
 `;
 

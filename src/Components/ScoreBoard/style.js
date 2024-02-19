@@ -12,6 +12,8 @@ export const MainContainer = styled.div`
   padding: 20px;
 
   @media (max-width: 768px) {
+    padding: 10px 20px;
+    width: 70%;
   }
 `;
 
@@ -20,6 +22,8 @@ export const Logo = styled.img`
   height: 100px;
 
   @media (max-width: 768px) {
+    width: 100px;
+    height: 60px;
   }
 `;
 
@@ -33,6 +37,8 @@ export const ScoreContainer = styled.div`
   justify-content: center;
 
   @media (max-width: 768px) {
+    width: 90px;
+    height: 70px;
   }
 `;
 
@@ -42,6 +48,7 @@ export const ScoreTitle = styled.h2`
   font-weight: 600;
 
   @media (max-width: 768px) {
+    font-size: 1rem;
   }
 `;
 
@@ -51,5 +58,6 @@ export const ScoreNum = styled.h1`
   font-weight: 700;
 
   @media (max-width: 768px) {
+    font-size: 2.5rem;
   }
 `;

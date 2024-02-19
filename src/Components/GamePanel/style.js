@@ -9,12 +9,17 @@ export const MainContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    top: -60px;  
+  }
 `;
 
 export const TriangleImg = styled.img`
   position: absolute;
 
   @media (max-width: 768px) {
+    width: 200px;
   }
 `;
 
@@ -29,6 +34,8 @@ export const UpperTriangleLayout = styled.div`
   box-sizing: border-box;
 
   @media (max-width: 768px) {
+    width: 360px;
+    top: 30px;
   }
 `;
 
@@ -54,6 +61,11 @@ export const EmptyCircle = styled.div`
   width: 200px;
   border-radius: 50%;
   background: #18213b;
+
+  @media (max-width: 768px) {
+    height: 150px;
+    width: 150px;
+  }
 `;
 
 export const GameEndContainer = styled.div`
@@ -75,6 +87,8 @@ export const ChoiceContainer = styled.div`
   width: 100%;
 
   @media (max-width: 768px) {
+    width: 50%;
+    height: 50%;
   }
 
   &.userChoice {
@@ -83,6 +97,7 @@ export const ChoiceContainer = styled.div`
 
   &.houseChoice {
     order: 3;
+    margin-left: 100px;
   }
 `;
 
@@ -92,6 +107,9 @@ export const ChoiceTitle = styled.h2`
   margin: 0;
 
   @media (max-width: 768px) {
+    order: 1;
+    width: 240px;
+    font-size: 1rem;
   }
 `;
 
@@ -106,6 +124,9 @@ export const GameResultContainer = styled.div`
   order: 2;
 
   @media (max-width: 768px) {
+    position: absolute;
+    bottom: -100px;
+    width: 120%;
   }
 `;
 
