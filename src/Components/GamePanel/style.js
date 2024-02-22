@@ -89,6 +89,11 @@ export const ChoiceContainer = styled.div`
   @media (max-width: 768px) {
     width: 50%;
     height: 50%;
+
+    &.houseChoice {
+      order: 3;
+      margin-left: 100px;
+    }
   }
 
   &.userChoice {
@@ -97,7 +102,6 @@ export const ChoiceContainer = styled.div`
 
   &.houseChoice {
     order: 3;
-    margin-left: 100px;
   }
 `;
 
