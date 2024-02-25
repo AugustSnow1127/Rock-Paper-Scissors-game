@@ -11,7 +11,7 @@ export const MainContainer = styled.div`
   flex-direction: column;
 
   @media (max-width: 768px) {
-    top: -60px;  
+    top: ${props => props.userChoice ? "-10%" : "0" };
   }
 `;
 
@@ -69,13 +69,16 @@ export const EmptyCircle = styled.div`
 `;
 
 export const GameEndContainer = styled.div`
-  // border: 1px solid red;
-  width: 60vw;
+  width: 30vw;
   height: 100%;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 45vw;
+  }
 `;
 
 export const ChoiceContainer = styled.div`
@@ -88,7 +91,7 @@ export const ChoiceContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 50%;
-    height: 50%;
+    height: 65%;
 
     &.houseChoice {
       order: 3;
@@ -139,6 +142,7 @@ export const GameResult = styled.h1`
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
+  width: 100vw;
 
   @media (max-width: 768px) {
   }

@@ -15,7 +15,7 @@ const GamePanel = () => {
   }
   
   return (
-    <MainContainer>
+    <MainContainer userChoice={userChoice}>
       {/* Game Step 1: User choice */}
       {!userChoice && (
         <GameStart setUserChoice={setUserChoice} />
